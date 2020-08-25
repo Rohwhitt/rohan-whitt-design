@@ -28,6 +28,11 @@ body {
   background-attachment: fixed;
 }
 
+.scrollmagic-pin-spacer {
+  height: 100% !important;
+  overflow-y: hidden;
+}
+
 /*-- NAVIGATION --*/
 nav {
   width: 100%;
@@ -358,7 +363,7 @@ a {
   width: 88%;
   height: auto;
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
   z-index: 2;
 /*  animation: transIntop 1.5s;
@@ -370,7 +375,7 @@ a {
   width: 88%;
   height: auto;
   position: absolute;
-  bottom: 0;
+  top: 250px;
   left: 0;
   z-index: 2;
 /*  animation: transInbottom 1.5s;
@@ -384,27 +389,27 @@ a {
 }
 
 #topout {
-  top: 50px;
+  top: 90px;
   animation: transIntop1 1.6s;
   animation-delay: 1s;
 }
 
 #bottomout {
-  top: 100px;
+  top: 270px;
   animation: transInbottom1 1.6s;
   animation-delay: 1s;
 }
 
 
 #topout1 {
-  top: 20px;
+  top: 120px;
   opacity: 30%;
   animation: transIntop2 1.6s;
   animation-delay: 1s;
 }
 
 #bottomout1 {
-  top: 220px;
+  top: 290px;
   opacity: 30%;
   animation: transInbottom2 1.7s;
   animation-delay: 1.2s;
@@ -785,6 +790,32 @@ textarea.form-format {
 
   .image-overlay {
     background:  linear-gradient(0deg, rgba(10,10,10,0.9) 0%, rgba(30,30,30,0.7) 18%, rgba(70,70,70,0.4) 33%, rgba(32,47,62,0) 64%);
+  }
+
+  .tophand {
+    transform: rotate(-25deg);
+    top: 300px;
+  }
+
+  #topout {
+    top: 330px;
+  }
+
+  #topout1 {
+    top: 360px;
+  }
+
+  .bottomhand {
+    transform: rotate(-30deg);
+    top: 570px;
+  }
+
+  #bottomout {
+    top: 590px;
+  }
+
+  #bottomout1 {
+    top: 630px;
   }
 
 }
