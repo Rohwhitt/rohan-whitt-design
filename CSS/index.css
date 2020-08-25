@@ -384,7 +384,7 @@ a {
 }
 
 #topout {
-  top: -30px;
+  top: 50px;
   animation: transIntop1 1.6s;
   animation-delay: 1s;
 }
