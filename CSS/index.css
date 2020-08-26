@@ -758,6 +758,9 @@ textarea.form-format {
     width: 100%;
   }
 
+  .project1 {
+    margin-top: 80px;
+  }
 
   .contact-info {
     display: none;
@@ -769,7 +772,7 @@ textarea.form-format {
 
   .btn-container {
     text-align: center;
-    margin-top: 450px;
+    margin-top: 80vh;
   }
 
   .btn-position {
@@ -792,9 +795,24 @@ textarea.form-format {
     background:  linear-gradient(0deg, rgba(10,10,10,0.9) 0%, rgba(30,30,30,0.7) 18%, rgba(70,70,70,0.4) 33%, rgba(32,47,62,0) 64%);
   }
 
+  h1 {
+    margin-left: auto;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  h1 a {
+    font-size: 42px;
+  }
+
+  .topgroup {
+    width: 80%;
+    right: -100px;
+  }
+
   .tophand {
-    transform: rotate(-25deg);
-    top: 300px;
+    top: 280px;
   }
 
   #topout {
@@ -802,20 +820,32 @@ textarea.form-format {
   }
 
   #topout1 {
-    top: 360px;
+    top: 380px;
+  }
+
+  .bottomgroup {
+    width: 80%;
+    left: -100px;
   }
 
   .bottomhand {
-    transform: rotate(-30deg);
-    top: 570px;
+    top: 380px;
   }
 
   #bottomout {
-    top: 590px;
+    top: 420px;
   }
 
   #bottomout1 {
-    top: 630px;
+    top: 470px;
+  }
+
+  #about {
+    margin-top: 0;
+  }
+
+  .contact-form h1 {
+    margin-left: auto;
   }
 
 }
