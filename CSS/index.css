@@ -83,8 +83,8 @@ li a {
 }
 
 nav img {
-  width: 34.8px;
-  height: 55.6px;
+  width: 35px;
+  height: auto;
   background-size: cover;
   position: fixed;
   left: 15px;
@@ -678,6 +678,14 @@ textarea.form-format {
 }
 
 @media only screen and (max-width: 500px) {
+
+  .nav-logo a {
+    display: none;
+  }
+
+  nav img {
+    width: 20px;
+  }
 
   .about-container h1 {
     width: 100%;
