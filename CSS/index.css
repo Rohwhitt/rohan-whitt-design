@@ -90,8 +90,7 @@ nav img {
   height: auto;
   background-size: cover;
   position: fixed;
-  left: 15px;
-  padding-top: 10px;
+  padding: 10px 15px;
 }
 
 .nav-toggle img {
@@ -214,7 +213,7 @@ h1 {
   font-size: 46px;
   color: white;
   margin-left: 80px;
-  margin-top: 8%;
+  margin-top: 100px;
   letter-spacing: 8px;
   position: absolute;
   opacity: 1;
@@ -684,11 +683,40 @@ textarea.form-format {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
+
+  h1 {
+    font-size: 35px;
+    margin-left: 50px;
+  }
+
+  h1 a {
+    font-size: 35px;
+  }
 
   .nav-logo a {
     display: none;
   }
+
+  nav img {
+    width: 25px;
+    padding: 20px;
+  }
+
+  .tophand {
+    top: 130px;
+  }
+
+  #topout {
+    top: 160px;
+  }
+
+  #topout1 {
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
 
   nav {
     height: 100vh;
