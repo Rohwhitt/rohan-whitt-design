@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+//Responsive navigation bar
+$('#mobile-nav-bar').click(function() {
+  $('.nav-background, .list-toggle').slideToggle(500);
+});
+
+$('li a').click(function(){
+  $('.nav-background, .list-toggle').slideToggle(300);
+});
+
 var handAnimation = new TimelineMax({onUpdate:updateHand}); //Variable for all hand animations on scroll
 var titleAnimation = new TimelineMax(); //Variable for title animation on scroll
 var aboutAnimation = new TimelineMax(); //Variable for about section animation
