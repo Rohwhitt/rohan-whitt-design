@@ -691,7 +691,7 @@ textarea.form-format {
   }
 
   nav {
-    height: auto;
+    height: 100vh;
   }
 
   nav img {
