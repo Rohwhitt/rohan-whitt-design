@@ -239,7 +239,7 @@ h1 a {
 }
 
 .about-container h1 {
-  margin-top: 240px;
+  margin-top: 150px;
   margin-left: 100px;
   width: auto;
   font-size: 55px;
@@ -260,7 +260,7 @@ h1 a {
   margin-left: 100px;
   height: 70%;
   width: 35%;
-  top: 390px;
+  top: 310px;
   position: absolute;
   opacity: 0;
 }
@@ -307,8 +307,9 @@ h1 a {
 
 .face-outline {
   height: 90%;
-  width: 90%;
+  width: 70%;
   top: 12px;
+  right: 10%;
   opacity: 0;
 }
 
@@ -714,9 +715,31 @@ textarea.form-format {
   #topout1 {
     top: 200px;
   }
+
+  .contact-form {
+    width: 60%;
+  }
+
+  .contact-info {
+    padding: 30px;
+    width: 40%
+  }
+
+  .contact-info-container {
+    margin-top: 40%;
+  }
+
+  .contact-info h2, h2 a {
+    font-size: 30px;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
 
   nav {
     height: 100vh;
@@ -801,9 +824,9 @@ textarea.form-format {
   }
 
   .about-shape {
-    right: auto;
+    right: -110px;
     top: 380px;
-    height: 50%;
+    height: 60%;
   }
 
   .face-outline {
@@ -892,6 +915,7 @@ textarea.form-format {
     margin-top: 20%;
     text-align: center;
     font-size: 42px;
+    width: 100%;
   }
 
   h1 a {
@@ -899,7 +923,7 @@ textarea.form-format {
   }
 
   .topgroup {
-    width: 80%;
+    width: 70%;
     right: -100px;
   }
 
@@ -916,7 +940,7 @@ textarea.form-format {
   }
 
   .bottomgroup {
-    width: 80%;
+    width: 70%;
     left: -100px;
   }
 
@@ -942,9 +966,26 @@ textarea.form-format {
 
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 651px) {
 
   ul {
     display: block !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .topgroup {
+    width: 80%;
+  }
+
+  .bottomgroup {
+    width: 80%;
+  }
+
+  .about-shape {
+    right: auto;
+    top: 380px;
+    height: 50%;
   }
 }
