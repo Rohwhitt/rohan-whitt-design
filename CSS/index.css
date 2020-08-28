@@ -242,12 +242,19 @@ h1 a {
   margin-top: 150px;
   margin-left: 100px;
   width: auto;
+  position: relative;
   font-size: 55px;
   opacity: 0;
 }
 
 .about-container h1 a {
   font-size: 55px;
+}
+
+.about-text-container {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
 }
 
 .about-text a {
@@ -258,10 +265,10 @@ h1 a {
 
 .about-text {
   margin-left: 100px;
-  height: 70%;
-  width: 35%;
-  top: 310px;
-  position: absolute;
+  height: auto;
+  width: 70%;
+  margin-top: 25px;
+  /*position: absolute;*/
   opacity: 0;
 }
 
@@ -279,7 +286,7 @@ h1 a {
   letter-spacing: 4px;
   z-index: 1;
   position: absolute;
-  top: 570px;
+  /*top: 570px;*/
   margin-left: 100px;
   color: white;
   text-decoration: none;
@@ -794,31 +801,41 @@ textarea.form-format {
     display: none;
   }
 
+  .about-container {
+    height: 100vh;
+  }
+
   .about-container h1 {
     width: 100%;
     font-size: 40px;
     text-align: center;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .about-container h1 a {
     font-size: 40px;
   }
 
+  .about-text-container {
+    width: 100%;
+    overflow-y: hidden;
+  }
+
   .about-text {
     width: 100%;
     top: 120px;
     text-align: center;
-    padding: 20px;
+    padding: 0 35px;
     box-sizing: border-box;
     margin-left: auto;
   }
 
   .about-visuals {
-    width: 100%;
+    /*width: 100%; */
+    display: none;
   }
-
+/*
   .about-visuals img {
     object-position: center;
   }
@@ -834,6 +851,7 @@ textarea.form-format {
     height: 40%;
     top: 380px
   }
+  */
 
   .download-position {
     position: absolute;
@@ -844,7 +862,7 @@ textarea.form-format {
   .download-container {
     text-align: center;
     height: 50px;
-    margin-top: 680px;
+    margin-top: auto;
   }
 
   .download {
@@ -962,6 +980,7 @@ textarea.form-format {
 
   .contact-form h1 {
     margin-left: auto;
+    margin-top: 5%;
   }
 
 }
