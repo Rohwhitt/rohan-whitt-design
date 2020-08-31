@@ -26,6 +26,7 @@
 body {
   background: linear-gradient(45deg, #0b1117, #181818, #0e2732, #123e51);
   background-attachment: fixed;
+  font-size: 16px;
 }
 
 .scrollmagic-pin-spacer {
@@ -43,7 +44,7 @@ nav {
 
 nav a {
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 ul {
@@ -67,7 +68,7 @@ li a {
   font-family: 'gothic';
   color: white;
   letter-spacing: 4px;
-  font-size: 18px;
+  font-size: 1.3em;
 }
 
 .nav-logo {
@@ -80,7 +81,7 @@ li a {
   font-family: 'gothic';
   color: white;
   letter-spacing: 4px;
-  font-size: 18px;
+  font-size: 1em;
   position: absolute;
   top: 0px;
 }
@@ -210,7 +211,7 @@ ul li a:hover {
 
 h1 {
   font-family: 'gothicbold';
-  font-size: 46px;
+  font-size: 2.6em;
   color: white;
   margin-left: 80px;
   margin-top: 100px;
@@ -222,7 +223,7 @@ h1 {
 
 h1 a {
   color: rgb(92, 224, 244);
-  font-size: 46px;
+  font-size: 1em;
   margin-left: auto;
   font-family: 'gothicbold';
 }
@@ -243,12 +244,12 @@ h1 a {
   margin-left: 100px;
   width: auto;
   position: relative;
-  font-size: 55px;
+  font-size: 3.4em;
   opacity: 0;
 }
 
 .about-container h1 a {
-  font-size: 55px;
+  /*font-size: 55px;*/
 }
 
 .about-text-container {
@@ -259,8 +260,12 @@ h1 a {
 
 .about-text a {
   font-family: 'lato-thin';
-  font-size: 20px;
+  font-size: 1.25em;
   color: rgb(210, 210, 210);
+}
+
+button {
+  font-size: 1em;
 }
 
 .about-text {
@@ -281,7 +286,7 @@ h1 a {
   border-radius: 20px;
   background: 0;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 1em;
   font-family: 'gothic';
   letter-spacing: 4px;
   z-index: 1;
@@ -328,7 +333,7 @@ h1 a {
 }
 
 a {
-  font-size: 25px;
+  font-size: 1.3em;
   font-family: 'gothic';
   color: white;
 }
@@ -503,7 +508,6 @@ a {
   border-radius: 20px;
   background: 0;
   padding: 10px 20px;
-  font-size: 15px;
   font-family: 'gothic';
   letter-spacing: 4px;
   margin: 30px 0 0 80px;
@@ -539,7 +543,7 @@ a {
 
 h2 {
   font-family: 'gothicbold';
-  font-size: 46px;
+  font-size: 2.8em;
   color: white;
   margin-left: 80px;
   margin-top: 230px;
@@ -550,7 +554,7 @@ h2 {
 
 h3 {
   font-family: 'gothic';
-  font-size: 25px;
+  font-size: 1.5em;
   color: rgb(92, 224, 244);
   margin-left: 80px;
   margin-top: 10px;
@@ -561,7 +565,7 @@ h3 {
 
 h4 {
   font-family: 'gothicbold';
-  font-size: 230px;
+  font-size: 14.4em;
   color: white;
   opacity: .2;
   margin-left: 80px;
@@ -605,7 +609,7 @@ h4 {
 }
 
 .contact-info h2 {
-  font-size: 38px;
+  font-size: 2.4em;
   letter-spacing: 4px;
   margin-left: auto;
   margin-top: auto;
@@ -614,13 +618,12 @@ h4 {
 
 h2 a {
   color: rgb(92, 224, 244);
-  font-size: 38px;
+  font-size: 1em;
   font-family: 'lato';
 }
 
 .contact-text {
   font-family: 'lato-thin';
-  font-size: 20px;
   color: rgb(210, 210, 210);
 }
 
@@ -657,7 +660,7 @@ form {
   outline: none;
   border-radius: 50px;
   color: white;
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: 'gothic';
   padding: 15px;
   box-sizing: border-box;
@@ -691,13 +694,16 @@ textarea.form-format {
 
 @media only screen and (max-width: 1000px) {
 
+  body {
+    font-size: 13px;
+  }
+
   h1 {
-    font-size: 35px;
     margin-left: 50px;
   }
 
-  h1 a {
-    font-size: 35px;
+  h4 {
+    margin-top: 80px;
   }
 
   .nav-logo a {
@@ -729,18 +735,6 @@ textarea.form-format {
     width: 55%;
   }
 
-  .about-container h1 {
-    font-size: 35px;
-  }
-
-  .about-container h1 a {
-    font-size: 35px;
-  }
-
-  .about-text a {
-    font-size: 16px;
-  }
-
   .contact-form {
     width: 60%;
   }
@@ -761,20 +755,11 @@ textarea.form-format {
 
   .form-format {
     height: 35px;
-    font-size: 15px;
     margin-top: 20px;
   }
 
   textarea.form-format {
     height: 100px;
-  }
-
-  .contact-info h2, h2 a {
-    font-size: 30px;
-  }
-
-  .contact-text {
-    font-size: 16px;
   }
 
 }
@@ -804,10 +789,6 @@ textarea.form-format {
   li {
     display: list-item;
     line-height: 100px;
-  }
-
-  li a {
-    font-size: 40px;
   }
 
   .nav-toggle {
@@ -840,14 +821,9 @@ textarea.form-format {
 
   .about-container h1 {
     width: 100%;
-    font-size: 40px;
     text-align: center;
     margin-left: auto;
     margin-top: 40px;
-  }
-
-  .about-container h1 a {
-    font-size: 40px;
   }
 
   .about-text-container {
@@ -907,7 +883,6 @@ textarea.form-format {
   h2 {
     margin-left: auto;
     text-align: center;
-    font-size: 40px;
     padding: 0 8px 0 8px;
     box-sizing: border-box;
   }
@@ -949,7 +924,6 @@ textarea.form-format {
     margin-top: auto;
     margin-left: auto;
     position: relative;
-    font-size: 20px;
     border: 3.5px solid white;
     border-radius: 25px;
     padding: 12px 25px;
@@ -963,12 +937,7 @@ textarea.form-format {
     margin-left: auto;
     margin-top: 20%;
     text-align: center;
-    font-size: 42px;
     width: 100%;
-  }
-
-  h1 a {
-    font-size: 42px;
   }
 
   .topgroup {
