@@ -452,6 +452,7 @@ a {
 
 .work-text-container {
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 2;
 }
@@ -505,8 +506,7 @@ a {
   font-size: 15px;
   font-family: 'gothic';
   letter-spacing: 4px;
-  margin-top: 350px;
-  margin-left: 80px;
+  margin: 30px 0 0 80px;
   z-index: 2;
   position: absolute;
   color: white;
@@ -579,10 +579,8 @@ h4 {
 }
 
 .contact-form h1 {
-  margin-left: 6%;
-  margin-top: 15%;
+  margin: 15% 6% 20px;
   position: relative;
-  margin-bottom: 20px;
 }
 
 .contact-form {
@@ -723,6 +721,26 @@ textarea.form-format {
     top: 200px;
   }
 
+  .about-text-container {
+    width: 55%;
+  }
+
+  .about-visuals {
+    width: 55%;
+  }
+
+  .about-container h1 {
+    font-size: 35px;
+  }
+
+  .about-container h1 a {
+    font-size: 35px;
+  }
+
+  .about-text a {
+    font-size: 16px;
+  }
+
   .contact-form {
     width: 60%;
   }
@@ -734,6 +752,21 @@ textarea.form-format {
 
   .contact-info-container {
     margin-top: 40%;
+  }
+
+  .contact-form h1 {
+    margin: 2% 6% 0;
+    position: relative;
+  }
+
+  .form-format {
+    height: 35px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  textarea.form-format {
+    height: 100px;
   }
 
   .contact-info h2, h2 a {
@@ -787,7 +820,7 @@ textarea.form-format {
     width: 40px;
     height: auto;
     left: auto;
-    right: 20px;
+    right: 5px;
     padding-top: 0;
     display: block;
   }
@@ -905,13 +938,11 @@ textarea.form-format {
 
   .btn-container {
     text-align: center;
-    margin-top: 80vh;
+    margin-top: 30px;
   }
 
   .btn-position {
-    position: absolute;
     width: 100%;
-    height: 100%;
   }
 
   .explore {
