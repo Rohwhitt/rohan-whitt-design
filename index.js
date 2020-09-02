@@ -12,9 +12,9 @@ $('li a').click(function(){
 var handAnimation = new TimelineMax({onUpdate:updateHand}); //Variable for all hand animations on scroll
 var titleAnimation = new TimelineMax(); //Variable for title animation on scroll
 var aboutAnimation = new TimelineMax(); //Variable for about section animation
-var visualAnimation = new TimelineMax();
-var parallaxScroll = new TimelineMax({onUpdate:updateParallax});
-var parallaxScrollTwo = new TimelineMax({onUpdate:updateParallaxTwo});
+var visualAnimation = new TimelineMax(); //Variable for about visuals animation
+var parallaxScroll = new TimelineMax({onUpdate:updateParallax}); //parallax scrolling for project 1
+var parallaxScrollTwo = new TimelineMax({onUpdate:updateParallaxTwo}); //parallax scrolling for project 2
 const controller = new ScrollMagic.Controller();
 
 //Hand animatons
