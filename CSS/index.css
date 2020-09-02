@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -15,11 +16,14 @@
 
 @font-face {
     font-family: 'gothicbold';
-    src: url('Fonts/GOTHICB.ttf')  format('truetype');
+    src: url('Fonts/GOTHICB.ttf')  format('truetype'),
+         url('Fonts/GOTHICB.woff') format('woff'),
+         url('Fonts/GOTHICB.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/GOTHICB.svg#GOTHICB') format('svg');
 }
 
 @font-face {
-  font-family: 'lato-thin';
+  font-family: 'catamaran';
   src: url('Fonts/Catamaran-Light.ttf') format('truetype');
 }
 
@@ -259,7 +263,7 @@ h1 a {
 }
 
 .about-text a {
-  font-family: 'lato-thin';
+  font-family: 'catamaran';
   font-size: 1.25em;
   color: rgb(210, 210, 210);
 }
@@ -422,14 +426,14 @@ a {
 
 #topout1 {
   top: 120px;
-  opacity: 30%;
+  opacity: 0.3;
   animation: transIntop2 1.6s;
   animation-delay: 1s;
 }
 
 #bottomout1 {
   top: 290px;
-  opacity: 30%;
+  opacity: 0.3;
   animation: transInbottom2 1.7s;
   animation-delay: 1.2s;
 }
@@ -626,7 +630,7 @@ h2 a {
 }
 
 .contact-text {
-  font-family: 'lato-thin';
+  font-family: 'catamaran';
   color: rgb(210, 210, 210);
 }
 
