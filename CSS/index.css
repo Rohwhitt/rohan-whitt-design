@@ -699,6 +699,23 @@ textarea.form-format {
   transition: 0.5s;
 }
 
+@media only screen and (min-width: 1439px) {
+  .about-text-container {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1439px) {
+  .about-text-container {
+    height: 100%;
+    top: 5%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
 
   body {
@@ -856,23 +873,6 @@ textarea.form-format {
     /*width: 100%; */
     display: none;
   }
-/*
-  .about-visuals img {
-    object-position: center;
-  }
-
-  .about-shape {
-    right: -110px;
-    top: 380px;
-    height: 60%;
-  }
-
-  .face-outline {
-    width: 100%;
-    height: 40%;
-    top: 380px
-  }
-  */
 
   .download-position {
     position: absolute;
