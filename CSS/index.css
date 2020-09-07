@@ -647,6 +647,7 @@ h2 a {
 .contact-links {
   width: 100%;
   height: 150px;
+  margin-top: 1.5rem;
 }
 
 .contact-links a {
@@ -703,6 +704,42 @@ textarea.form-format {
   border-color: rgb(92, 224, 244);
   color: rgb(92, 224, 244);
   transition: 0.5s;
+}
+
+/*-- CONTACT RETURN --*/
+.contact-return {
+  text-align: center;
+  margin-left: auto;
+  font-size: 3em;
+  margin-top: 250px;
+  position: relative;
+  letter-spacing: 5px;
+}
+
+.return-container {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  padding: 20px 0 0;
+  margin-top: 50px;
+}
+
+.return-btn {
+  border: 2.5px solid rgb(190, 190, 190);
+  border-radius: 20px;
+  background: 0;
+  padding: 10px 20px;
+  font-family: 'gothic';
+  letter-spacing: 4px;
+  z-index: 1;
+  color: white;
+  text-decoration: none;
+}
+
+.return-btn:hover {
+  border-color: rgb(92, 224, 244);
+  color: rgb(92, 224, 244);
+  transition: 0.5s
 }
 
 @media only screen and (min-width: 1680px) {

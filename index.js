@@ -17,13 +17,23 @@ var parallaxScroll = new TimelineMax({onUpdate:updateParallax}); //parallax scro
 var parallaxScrollTwo = new TimelineMax({onUpdate:updateParallaxTwo}); //parallax scrolling for project 2
 const controller = new ScrollMagic.Controller();
 
-//Hand animatons
-handAnimation.to(".tophand", 1, {x:680});
-handAnimation.to("#topout", 0.7, {x:730, opacity:0}, "=-1");
-handAnimation.to("#topout1", 0.4, {x:750, opacity:0}, "=-1");
-handAnimation.to(".bottomhand", 1, {x:-680}, "=-1");
-handAnimation.to("#bottomout", 0.7, {x:-730, opacity:0}, "=-1");
-handAnimation.to("#bottomout1", 0.4, {x:-750, opacity:0}, "=-1");
+var screenWidth = window.innerWidth;
+
+if (screenWidth > 1900) {
+  handAnimation.to(".tophand", 1, {x:1200});
+  handAnimation.to("#topout", 0.7, {x:1280, opacity:0}, "=-1");
+  handAnimation.to("#topout1", 0.4, {x:1320, opacity:0}, "=-1");
+  handAnimation.to(".bottomhand", 1, {x:-1200}, "=-1");
+  handAnimation.to("#bottomout", 0.7, {x:-1280, opacity:0}, "=-1");
+  handAnimation.to("#bottomout1", 0.4, {x:-1320, opacity:0}, "=-1");
+} else {
+  handAnimation.to(".tophand", 1, {x:680});
+  handAnimation.to("#topout", 0.7, {x:730, opacity:0}, "=-1");
+  handAnimation.to("#topout1", 0.4, {x:750, opacity:0}, "=-1");
+  handAnimation.to(".bottomhand", 1, {x:-680}, "=-1");
+  handAnimation.to("#bottomout", 0.7, {x:-730, opacity:0}, "=-1");
+  handAnimation.to("#bottomout1", 0.4, {x:-750, opacity:0}, "=-1");
+}
 //Title and Scroll animations
 titleAnimation.to(".handpin h1, .mousescroll", 0.2, {opacity:0});
 //About animations
@@ -98,4 +108,6 @@ function updateParallax() {
 function updateParallaxTwo() {
   parallaxScrollTwo.progress();
 }
+
+
 });
