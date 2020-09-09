@@ -13,7 +13,6 @@
          url('Fonts/GOTHIC.ttf')  format('truetype'),
          url('Fonts/GOTHIC.svg#Century Gothic') format('svg');
 }
-
 @font-face {
     font-family: 'gothicbold';
     src: url('Fonts/GOTHICB.ttf')  format('truetype'),
@@ -21,7 +20,6 @@
          url('Fonts/GOTHICB.eot?#iefix') format('embedded-opentype'),
          url('Fonts/GOTHICB.svg#GOTHICB') format('svg');
 }
-
 @font-face {
   font-family: 'catamaran';
   src: url('Fonts/Catamaran-Light.ttf') format('truetype');
@@ -63,8 +61,7 @@ li {
   list-style: none;
   display: inline-block;
   line-height: 40px;
-  padding: 0 5%;
-  padding-top: 20px;
+  padding: 20px 5% 0;
 }
 
 li a {
@@ -127,13 +124,9 @@ ul li a:hover {
   text-align: center;
   position: absolute;
   bottom: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
   opacity: 1;
-}
-
-.scrolltxt {
-  font-size: 13px;
-  opacity: 0;
-  color: rgb(190, 190, 190);
 }
 
 .mouseshape {
@@ -144,11 +137,6 @@ ul li a:hover {
   border-radius: 50px;
   margin: 0 auto;
   opacity: .6;
-}
-
-.mousescroll:hover .scrolltxt {
-  opacity: 1;
-  transition: 0.7s;
 }
 
 .mousedot {
@@ -211,8 +199,7 @@ h1 {
   font-family: 'gothicbold';
   font-size: 2.6em;
   color: white;
-  margin-left: 80px;
-  margin-top: 100px;
+  margin: 100px 0 0 80px;
   letter-spacing: 0.2em;
   position: absolute;
   opacity: 1;
@@ -226,6 +213,36 @@ h1 a {
   font-family: 'gothicbold';
 }
 
+h2 {
+  font-family: 'gothicbold';
+  font-size: 3.5em;
+  color: white;
+  margin: 5% 0 0 80px;
+  letter-spacing: 8px;
+  z-index: 2;
+}
+
+h3 {
+  font-family: 'gothic';
+  font-size: 1.5em;
+  color: rgb(92, 224, 244);
+  margin: 10px 0 0 80px;
+  letter-spacing: 8px;
+  z-index: 2;
+}
+
+h4 {
+  font-family: 'gothicbold';
+  font-size: 14.4em;
+  color: white;
+  opacity: .2;
+  margin: 15vh 0 0 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+/*--ABOUT SECTION--*/
+
 #about {
   margin-top: 250px;
 }
@@ -238,16 +255,11 @@ h1 a {
 }
 
 .about-container h1 {
-  margin-top: 150px;
-  margin-left: 100px;
+  margin: 150px 0 0 100px;
   width: auto;
   position: relative;
   font-size: 3.4em;
   opacity: 0;
-}
-
-.about-container h1 a {
-  /*font-size: 55px;*/
 }
 
 .about-text-container {
@@ -267,11 +279,9 @@ button {
 }
 
 .about-text {
-  margin-left: 100px;
   height: auto;
   width: 70%;
-  margin-top: 25px;
-  /*position: absolute;*/
+  margin: 25px 0 0 100px;
   opacity: 0;
 }
 
@@ -389,9 +399,6 @@ a {
   top: 40px;
   right: 0;
   z-index: 2;
-/*  animation: transIntop 1.5s;
-  animation-delay: 1s;
-  transition-timing-function: ease-out; */
 }
 
 .bottomhand {
@@ -401,9 +408,6 @@ a {
   top: 250px;
   left: 0;
   z-index: 2;
-/*  animation: transInbottom 1.5s;
-  animation-delay: 1s;
-  transition-timing-function: ease-out; */
 }
 
 .hand-outline {
@@ -452,7 +456,6 @@ a {
 }
 
 /*--WORK--*/
-/*--PROJECT01--*/
 #work h1 {
   text-align: center;
   margin: 0 auto;
@@ -463,6 +466,7 @@ a {
   width: 100%;
   height: 50vh;
   margin-top: 25vh;
+  overflow-y: hidden;
   position: absolute;
   z-index: 2;
 }
@@ -483,13 +487,7 @@ a {
   rgba(70,70,70,0.4) 33%, rgba(32,47,62,0) 64%);
 }
 
-.projectbg1 {
-  width: 100%;
-  height: 125%;
-  object-fit: cover;
-}
-
-.projectbg2 {
+.projectbg {
   width: 100%;
   height: 125%;
   object-fit: cover;
@@ -513,7 +511,7 @@ a {
   border-radius: 20px;
   text-decoration: none;
   background: 0;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 20px;
   font-size: 1em;
   font-family: 'gothic';
   letter-spacing: 4px;
@@ -524,8 +522,7 @@ a {
 }
 
 .explore:hover {
-  padding: 10px 40px;
-  padding-left: 25px;
+  padding: 10px 40px 10px 30px;
   border-color: rgb(92, 224, 244);
   color: rgb(92, 224, 244);
   transition: 0.5s;
@@ -540,43 +537,11 @@ a {
   filter: grayscale(100%);
 }
 
-
-.btn-hover:hover .btn-arrow {
+.explore:hover .btn-arrow {
   padding-left: 15px;
   opacity: 1;
   filter: none;
   transition: 0.5s;
-}
-
-h2 {
-  font-family: 'gothicbold';
-  font-size: 3.5em;
-  color: white;
-  margin: 5% 0 0 80px;
-  letter-spacing: 8px;
-  /*position: absolute;*/
-  z-index: 2;
-}
-
-h3 {
-  font-family: 'gothic';
-  font-size: 1.5em;
-  color: rgb(92, 224, 244);
-  margin-left: 80px;
-  margin-top: 10px;
-  letter-spacing: 8px;
-  /*position: absolute;*/
-  z-index: 2;
-}
-
-h4 {
-  font-family: 'gothicbold';
-  font-size: 14.4em;
-  color: white;
-  opacity: .2;
-  margin: 15vh 0 0 80px;
-  position: absolute;
-  z-index: 2;
 }
 
 /*--CONTACT--*/
@@ -600,8 +565,7 @@ h4 {
   height: 100%;
   position: absolute;
   background: rgb(9, 18, 25);
-  padding: 20px;
-  padding-top: 50px;
+  padding: 50px 20px 20px 20px;
   box-sizing: border-box;
   box-shadow: 5px 0px 30px rgba(0, 0, 0, .5);
 }
@@ -619,8 +583,7 @@ h4 {
 .contact-info h2 {
   font-size: 2.4em;
   letter-spacing: 4px;
-  margin-left: auto;
-  margin-top: auto;
+  margin: auto;
   position: initial;
 }
 
@@ -656,6 +619,7 @@ h2 a {
   margin-top: 20px;
 }
 
+/*--FORM--*/
 form {
   width: 90%;
   margin: auto;
@@ -692,6 +656,7 @@ textarea.form-format {
   position: absolute;
   color: white;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .submit-form:hover{
@@ -703,9 +668,8 @@ textarea.form-format {
 /*-- CONTACT RETURN --*/
 .contact-return {
   text-align: center;
-  margin-left: auto;
   font-size: 3em;
-  margin-top: 250px;
+  margin: 250px 0 0 auto;
   position: relative;
   letter-spacing: 5px;
 }
@@ -758,7 +722,6 @@ textarea.form-format {
     overflow-y: hidden;
   }
 }
-
 @media only screen and (min-width: 1439px) and (max-width: 1679px) {
   body {
     font-size: 17px;
@@ -768,7 +731,6 @@ textarea.form-format {
     top: 10%;
   }
 }
-
 @media only screen and (min-height: 900px) {
   .hand-height {
     top: 90px;
@@ -790,16 +752,13 @@ textarea.form-format {
     top: 380px;
   }
 }
-
 @media only screen and (min-width: 1281px) and (max-width: 1439px) {
   .about-text-container {
     height: 100%;
     top: 5%;
   }
 }
-
 @media only screen and (max-width: 1000px) {
-
   body {
     font-size: 13px;
   }
@@ -869,9 +828,7 @@ textarea.form-format {
   }
 
 }
-
 @media only screen and (max-width: 650px) {
-
   nav {
     height: auto;
     display: table;
@@ -933,8 +890,7 @@ textarea.form-format {
   .about-container h1 {
     width: 100%;
     text-align: center;
-    margin-left: auto;
-    margin-top: 40px;
+    margin: 40px 0 0 auto;
   }
 
   .about-text-container {
@@ -952,7 +908,6 @@ textarea.form-format {
   }
 
   .about-visuals {
-    /*width: 100%; */
     display: none;
   }
 
@@ -1008,6 +963,7 @@ textarea.form-format {
   .btn-container {
     text-align: center;
     margin-top: 30px;
+    padding: 20px;
   }
 
   .btn-position {
@@ -1015,8 +971,7 @@ textarea.form-format {
   }
 
   .explore {
-    margin-top: auto;
-    margin-left: auto;
+    margin: auto;
     position: relative;
     border: 3.5px solid white;
     border-radius: 25px;
@@ -1028,8 +983,7 @@ textarea.form-format {
   }
 
   h1 {
-    margin-left: auto;
-    margin-top: 20%;
+    margin: 20% 0 0 auto;
     text-align: center;
     width: 100%;
   }
@@ -1073,21 +1027,16 @@ textarea.form-format {
   }
 
   .contact-form h1 {
-    margin-left: auto;
-    margin-top: 5%;
+    margin: 5% 0 0 auto;
   }
 
 }
-
 @media only screen and (min-width: 651px) {
-
   ul {
     display: block !important;
   }
 }
-
 @media only screen and (max-width: 500px) {
-
   .topgroup {
     width: 80%;
   }

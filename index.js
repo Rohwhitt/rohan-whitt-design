@@ -40,8 +40,8 @@ titleAnimation.to(".handpin h1, .mousescroll", 0.2, {opacity:0});
 aboutAnimation.to("#about h1, .about-text", 0.5, {y:-30, opacity:1});
 visualAnimation.to(".face-outline", 0.7, {y:-30, opacity:1}, "=0.5");
 //Parallax Work animation
-parallaxScroll.to(".projectbg1", 1, {y:"-20%", ease:Power0.easeNone});
-parallaxScrollTwo.to(".projectbg2", 1, {y:"-20%", ease:Power0.easeNone});
+parallaxScroll.to("#projectbg1", 1, {y:"-20%", ease:Power0.easeNone});
+parallaxScrollTwo.to("#projectbg2", 1, {y:"-20%", ease:Power0.easeNone});
 
 const scene = new ScrollMagic.Scene({
   triggerElement: ".scrollpoint1",
