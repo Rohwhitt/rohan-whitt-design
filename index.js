@@ -51,7 +51,6 @@ const scene = new ScrollMagic.Scene({
 
 .setPin(".handpin")
 .setTween(handAnimation)
-.addIndicators()
 .addTo(controller);
 
 const scene2 = new ScrollMagic.Scene({
@@ -64,14 +63,15 @@ const scene2 = new ScrollMagic.Scene({
 const scene3 = new ScrollMagic.Scene({
   triggerElement: "#about",
   triggerHook: ".4",
+  reverse: false
 })
 .setTween(aboutAnimation)
-.addTo(controller)
-.addIndicators(controller);
+.addTo(controller);
 
 const scene4 = new ScrollMagic.Scene({
   triggerElement: "#about",
   triggerHook: ".4",
+  reverse: false
 })
 .setTween(visualAnimation)
 .addTo(controller);
@@ -82,7 +82,6 @@ const scene5 = new ScrollMagic.Scene({
   duration: "100%"
 })
 .setTween(parallaxScroll)
-.addIndicators(controller)
 .addTo(controller);
 
 const scene6 = new ScrollMagic.Scene({
@@ -91,7 +90,6 @@ const scene6 = new ScrollMagic.Scene({
   duration: "100%"
 })
 .setTween(parallaxScrollTwo)
-.addIndicators(controller)
 .addTo(controller);
 
 //animate on scroll and log scroll position
@@ -108,6 +106,5 @@ function updateParallax() {
 function updateParallaxTwo() {
   parallaxScrollTwo.progress();
 }
-
 
 });

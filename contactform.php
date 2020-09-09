@@ -8,5 +8,6 @@
     $message = $_POST['message'];
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
-    echo "Thankyou for getting in contact.";
+
+    header("Location: contact-return.html");
 ?>
