@@ -103,6 +103,14 @@ ul li a:hover {
   color: rgb( 23, 203, 200);
 }
 
+p {
+  font-family: 'catamaran';
+  font-size: 1.25em;
+  color: rgb(210, 210, 210);
+  vertical-align: top;
+  display: inline-block;
+}
+
 .menu-hover::after {
   content: '';
   display: block;
