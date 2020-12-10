@@ -123,9 +123,25 @@ h3 {
   margin-top: 70px;
 }
 
+.screen-container {
+  margin-top: 200px;
+}
+
+.screen-container img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.screen-img-container {
+  display: inline-block;
+  width: 40%;
+  height: 70%;
+}
+
 .screen-info {
   width: 45%;
-  margin-top: 200px;
+  display: inline-block;
 }
 
 .screen-info h2 {
