@@ -125,6 +125,8 @@ h3 {
 
 .screen-container {
   margin-top: 200px;
+  height: 80vh;
+  display: flex;
 }
 
 .screen-container img {
@@ -134,14 +136,11 @@ h3 {
 }
 
 .screen-img-container {
-  display: inline-block;
-  width: 40%;
-  height: 70%;
+  flex: 1;
 }
 
 .screen-info {
-  width: 45%;
-  display: inline-block;
+  flex: 1;
 }
 
 .screen-info h2 {
