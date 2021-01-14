@@ -9,13 +9,11 @@ h1 {
 }
 
 h2 {
-  display: inline-block;
   margin: 0;
 }
 
 h3 {
-  margin-left: 0;
-  display: inline-block;
+  margin: 0;
   font-size: 1.2em
 }
 
@@ -66,19 +64,18 @@ h3 {
   overflow-y: hidden;
 }
 
+.project-info-container {
+  display: flex;
+}
+
 .heading-container {
-  width: 35%;
-  margin-top: 120px;
-  padding-right: 30px;
-  display: inline-block;
-  vertical-align: top;
+  margin: 120px 5% 0 0;
+  flex: .6;
 }
 
 .body-text-container {
-  position: relative;
   margin-top: 130px;
-  width: 55%;
-  display: inline-block;
+  flex: 1;
 }
 
 .info-container {
@@ -87,12 +84,11 @@ h3 {
 }
 
 .info-align {
-  margin-left: 80px;
+  margin: 0 80px;
 }
 
 .line {
-  width: 88%;
-  height: 10vh;
+  height: 10%;
   border-bottom: 2px solid;
   border-color: rgb( 23, 203, 200);
 }
@@ -135,6 +131,10 @@ h3 {
   height: 100%;
 }
 
+.second-info {
+  flex-direction: row-reverse;
+}
+
 .screen-img-container {
   flex: 1;
 }
@@ -143,15 +143,16 @@ h3 {
   flex: 1;
 }
 
+
 .screen-info h2 {
   margin: 35px 0;
   font-size: 2.5em;
 }
 
 @media only screen and (max-width: 731px) {
-  .heading-container {
-    display: block;
-    width: auto;
+
+  .project-info-container {
+    flex-direction: column;
   }
 
   .body-text-container {
@@ -165,5 +166,14 @@ h3 {
 
   h3 {
     text-align: left;
+  }
+
+  .info-align {
+    margin: auto;
+    padding: 0 8%;
+  }
+
+  .screen-container {
+    flex-direction: column;
   }
 }
