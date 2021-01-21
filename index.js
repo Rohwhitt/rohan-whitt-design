@@ -3,6 +3,7 @@ $(document).ready(function() {
 //Responsive navigation bar
 $('#mobile-nav-bar').click(function() {
   $('.nav-background, .list-toggle').slideToggle(500);
+  console.log(`clicked`);
 });
 
 $('li a').click(function(){
