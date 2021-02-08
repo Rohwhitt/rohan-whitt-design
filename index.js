@@ -12,6 +12,7 @@ $('li a').click(function(){
 
 var handAnimation = new TimelineMax({onUpdate:updateHand}); //Variable for all hand animations on scroll
 var titleAnimation = new TimelineMax(); //Variable for title animation on scroll
+var mouseAnimation = new TimelineMax(); // Variable for mouse animation on scroll
 var aboutAnimation = new TimelineMax(); //Variable for about section animation
 var visualAnimation = new TimelineMax(); //Variable for about visuals animation
 var parallaxScroll = new TimelineMax({onUpdate:updateParallax}); //parallax scrolling for project 1
@@ -36,7 +37,8 @@ if (screenWidth > 1900) {
   handAnimation.to("#bottomout1", 0.4, {x:-750, opacity:0}, "=-1");
 }
 //Title and Scroll animations
-titleAnimation.to(".handpin h1, .mousescroll", 0.2, {opacity:0});
+titleAnimation.to(".handpin h1", 0.2, {opacity:0});
+mouseAnimation.to(".mousescroll", 0.2, {display:'none'});
 //About animations
 aboutAnimation.to("#about h1, .about-text", 0.5, {y:-30, opacity:1});
 visualAnimation.to(".face-outline", 0.7, {y:-30, opacity:1}, "=0.5");
@@ -59,6 +61,13 @@ const scene2 = new ScrollMagic.Scene({
   triggerHook: "1",
 })
 .setTween(titleAnimation)
+.addTo(controller);
+
+const sceneThree = new ScrollMagic.Scene({
+  triggerElement: ".scrollpoint1",
+  triggerHook: "1"
+})
+.setTween(mouseAnimation)
 .addTo(controller);
 
 const scene3 = new ScrollMagic.Scene({
@@ -96,12 +105,10 @@ const scene6 = new ScrollMagic.Scene({
 //animate on scroll and log scroll position
 function updateHand() {
   handAnimation.progress();
-  console.log(handAnimation.progress());
 }
 
 function updateParallax() {
   parallaxScroll.progress();
-  console.log(parallaxScroll.progress());
 }
 
 function updateParallaxTwo() {
