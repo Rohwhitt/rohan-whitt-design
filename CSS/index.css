@@ -6,23 +6,23 @@
 }
 
 @font-face {
-    font-family: 'gothic';
-    src: url('Fonts/GOTHIC.eot');
-    src: url('Fonts/GOTHIC.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/GOTHIC.woff') format('woff'),
-         url('Fonts/GOTHIC.ttf')  format('truetype'),
-         url('Fonts/GOTHIC.svg#Century Gothic') format('svg');
+  font-family: "gothic";
+  src: url("Fonts/GOTHIC.eot");
+  src: url("Fonts/GOTHIC.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/GOTHIC.woff") format("woff"),
+    url("Fonts/GOTHIC.ttf") format("truetype"),
+    url("Fonts/GOTHIC.svg#Century Gothic") format("svg");
 }
 @font-face {
-    font-family: 'gothicbold';
-    src: url('Fonts/GOTHICB.ttf')  format('truetype'),
-         url('Fonts/GOTHICB.woff') format('woff'),
-         url('Fonts/GOTHICB.eot?#iefix') format('embedded-opentype'),
-         url('Fonts/GOTHICB.svg#GOTHICB') format('svg');
+  font-family: "gothicbold";
+  src: url("Fonts/GOTHICB.ttf") format("truetype"),
+    url("Fonts/GOTHICB.woff") format("woff"),
+    url("Fonts/GOTHICB.eot?#iefix") format("embedded-opentype"),
+    url("Fonts/GOTHICB.svg#GOTHICB") format("svg");
 }
 @font-face {
-  font-family: 'catamaran';
-  src: url('Fonts/Catamaran-Light.ttf') format('truetype');
+  font-family: "catamaran";
+  src: url("Fonts/Catamaran-Light.ttf") format("truetype");
 }
 
 body {
@@ -66,7 +66,7 @@ li {
 
 li a {
   text-decoration: none;
-  font-family: 'gothic';
+  font-family: "gothic";
   color: white;
   letter-spacing: 4px;
   font-size: 1em;
@@ -79,7 +79,7 @@ li a {
   line-height: 30px;
   padding-top: 5px;
   text-decoration: none;
-  font-family: 'gothic';
+  font-family: "gothic";
   color: white;
   letter-spacing: 4px;
   font-size: 1em;
@@ -100,11 +100,11 @@ nav img {
 }
 
 ul li a:hover {
-  color: rgb( 23, 203, 200);
+  color: rgb(23, 203, 200);
 }
 
 p {
-  font-family: 'catamaran';
+  font-family: "catamaran";
   font-size: 1em;
   color: rgb(210, 210, 210);
   vertical-align: top;
@@ -112,17 +112,17 @@ p {
 }
 
 .menu-hover::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 1px;
-  background: rgb( 23, 203, 200);
-  transition: width .3s;
+  background: rgb(23, 203, 200);
+  transition: width 0.3s;
 }
 
 .menu-hover:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 /*-- SCROLL MOUSE ANIMATION--*/
@@ -144,7 +144,7 @@ p {
   border-color: white;
   border-radius: 50px;
   margin: 0 auto;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .mousedot {
@@ -160,7 +160,7 @@ p {
 @keyframes moused {
   from {
     margin-top: 5px;
-    opacity: .6;
+    opacity: 0.6;
   }
   to {
     margin-top: 18px;
@@ -179,24 +179,24 @@ p {
 .smlogo img {
   width: 1.4em;
   height: auto;
-  opacity: .5;
+  opacity: 0.5;
   padding: 0 8px 8px 0;
   display: block;
 }
 
 .smlogo img:hover {
-  opacity: .8;
-  transition: .3s;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 /*--SCROLL BAR--*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   height: 5px;
   background: rgb(25, 25, 25);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: rgb(90, 90, 90);
   border-radius: 6px;
 }
@@ -204,7 +204,7 @@ p {
 /*-- HEADINGS AND TEXT --*/
 
 h1 {
-  font-family: 'gothicbold';
+  font-family: "gothicbold";
   font-size: 2.6em;
   color: white;
   letter-spacing: 0.2em;
@@ -216,20 +216,20 @@ h1 {
 h1 a {
   color: rgb(92, 224, 244);
   font-size: 1em;
-  font-family: 'gothicbold';
+  font-family: "gothicbold";
 }
 
 h2 {
-  font-family: 'gothicbold';
+  font-family: "gothicbold";
   font-size: 3.5em;
   color: white;
-  margin-top: 5%;
+  margin-top: 200px;
   letter-spacing: 8px;
   z-index: 2;
 }
 
 h3 {
-  font-family: 'gothic';
+  font-family: "gothic";
   font-size: 1.5em;
   color: rgb(92, 224, 244);
   margin-top: 10px;
@@ -238,19 +238,17 @@ h3 {
 }
 
 h4 {
-  font-family: 'gothicbold';
+  font-family: "gothicbold";
   font-size: 14.4em;
   color: white;
-  opacity: .2;
-  margin-top: 15vh;
-  position: absolute;
+  opacity: 0.2;
   z-index: 2;
 }
 
 h5 {
-    font-family: 'gothicbold';
-    font-size: 1.2em;
-    color: rgb(57, 57, 57);
+  font-family: "gothicbold";
+  font-size: 1.2em;
+  color: rgb(57, 57, 57);
 }
 
 .handpin h1 {
@@ -267,7 +265,7 @@ h5 {
   margin-left: 6%;
 }
 
-.about-container{
+.about-container {
   display: flex;
 }
 
@@ -283,7 +281,7 @@ h5 {
 }
 
 .about-text a {
-  font-family: 'catamaran';
+  font-family: "catamaran";
   font-size: 1.25em;
   color: rgb(210, 210, 210);
 }
@@ -298,28 +296,31 @@ button {
   opacity: 0;
 }
 
-.download {
+.button-main {
   border: 2.5px solid rgb(190, 190, 190);
-  border-radius: 20px;
+  border-radius: 30px;
   background: 0;
   padding: 10px 20px;
   font-size: 1em;
-  font-family: 'gothic';
+  font-family: "gothic";
   letter-spacing: 4px;
   z-index: 1;
   position: absolute;
   color: white;
+  box-shadow: inset 0 0 0 0 rgb(92, 224, 244);
   text-decoration: none;
 }
 
-.download:hover {
+.button-main:hover {
   border-color: rgb(92, 224, 244);
-  color: rgb(92, 224, 244);
-  transition: 0.5s;
+  box-shadow: inset 0 200px 0 0 rgb(92, 224, 244);
+  color: #0b1117;
+  transition: 0.4s ease-out;
 }
 
 .about-visuals {
   flex: 1;
+  opacity: 0;
 }
 
 .face-outline {
@@ -334,12 +335,11 @@ button {
 
 a {
   font-size: 1.3em;
-  font-family: 'gothic';
+  font-family: "gothic";
   color: white;
 }
 
 /*-- HAND IMAGES --*/
-
 .landing-container {
   width: 100%;
   height: 100%;
@@ -385,7 +385,7 @@ a {
   overflow-y: hidden;
 }
 
-.tophand{
+.tophand {
   width: 88%;
   height: auto;
   position: absolute;
@@ -420,7 +420,6 @@ a {
   animation-delay: 1s;
 }
 
-
 #topout1 {
   top: 120px;
   opacity: 0.3;
@@ -441,13 +440,6 @@ a {
   margin-top: 100.5vh;
 }
 
-.bg_hand {
-  background-color: red;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
 /*--WORK--*/
 #work {
   margin-top: 12%;
@@ -462,7 +454,7 @@ a {
 .work-text-container {
   width: 100%;
   height: 50vh;
-  margin-top: 25vh;
+  margin-top: 20vh;
   overflow-y: hidden;
   position: absolute;
   z-index: 2;
@@ -479,8 +471,13 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(90deg, rgba(10,10,10,0.9) 0%, rgba(30,30,30,0.7) 18%,
-  rgba(70,70,70,0.4) 33%, rgba(32,47,62,0) 64%);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 10, 0.9) 0%,
+    rgba(30, 30, 30, 0.7) 18%,
+    rgba(70, 70, 70, 0.4) 33%,
+    rgba(32, 47, 62, 0) 64%
+  );
 }
 
 .projectbg {
@@ -501,41 +498,13 @@ a {
 }
 
 .explore {
-  border: 2.5px solid rgb(190, 190, 190);
-  border-radius: 20px;
-  text-decoration: none;
-  background: 0;
-  padding: 10px 20px 10px 20px;
-  font-size: 1em;
-  font-family: 'gothic';
-  letter-spacing: 4px;
   margin-top: 30px;
-  z-index: 2;
+}
+
+.project-number {
   position: absolute;
-  color: white;
-}
-
-.explore:hover {
-  padding: 10px 40px 10px 30px;
-  border-color: rgb(92, 224, 244);
-  color: rgb(92, 224, 244);
-  transition: 0.5s;
-}
-
-.btn-arrow {
-  width: 18px;
-  height: 20px;
-  position: absolute;
-  padding-left: 5px;
-  opacity: 0;
-  filter: grayscale(100%);
-}
-
-.explore:hover .btn-arrow {
-  padding-left: 15px;
-  opacity: 1;
-  filter: none;
-  transition: 0.5s;
+  width: 100%;
+  top: 20px;
 }
 
 /*--CONTACT--*/
@@ -556,7 +525,7 @@ a {
   background: rgb(9, 18, 25);
   padding: 50px 20px 20px 20px;
   box-sizing: border-box;
-  box-shadow: 5px 0px 30px rgba(0, 0, 0, .5);
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info {
@@ -577,11 +546,11 @@ a {
 h2 a {
   color: rgb(92, 224, 244);
   font-size: 1em;
-  font-family: 'gothicbold';
+  font-family: "gothicbold";
 }
 
 .contact-text {
-  font-family: 'catamaran';
+  font-family: "catamaran";
   color: rgb(210, 210, 210);
 }
 
@@ -624,7 +593,7 @@ form {
   border-radius: 50px;
   color: white;
   font-size: 1.25em;
-  font-family: 'gothic';
+  font-family: "gothic";
   padding: 15px;
   box-sizing: border-box;
   margin-top: 2em;
@@ -636,23 +605,8 @@ textarea.form-format {
 }
 
 .submit-form {
-  border: 2.5px solid rgb(190, 190, 190);
-  border-radius: 20px;
-  background: 0;
-  padding: 10px 30px;
-  font-family: 'gothic';
-  letter-spacing: 4px;
-  z-index: 1;
-  position: absolute;
-  color: white;
   margin-top: 30px;
   cursor: pointer;
-}
-
-.submit-form:hover{
-  border-color: rgb(92, 224, 244);
-  color: rgb(92, 224, 244);
-  transition: 0.5s;
 }
 
 /*-- CONTACT RETURN --*/
@@ -673,50 +627,19 @@ textarea.form-format {
 }
 
 .return-btn {
-  border: 2.5px solid rgb(190, 190, 190);
-  border-radius: 20px;
-  background: 0;
-  padding: 10px 20px;
-  font-family: 'gothic';
-  letter-spacing: 4px;
-  z-index: 1;
-  color: white;
-  text-decoration: none;
-}
-
-.return-btn:hover {
-  border-color: rgb(92, 224, 244);
-  color: rgb(92, 224, 244);
-  transition: 0.5s
+  position: relative;
 }
 
 @media only screen and (min-width: 1680px) {
   body {
-    font-size: 23px
+    font-size: 23px;
   }
 
-  .download, .submit-form, .explore {
+  .button-main {
     border: 3px solid rgb(190, 190, 190);
   }
 }
-@media only screen and (min-width: 2400px) {
-  body {
-    font-size: 30px;
-  }
 
-  nav {
-    overflow-y: hidden;
-  }
-}
-@media only screen and (min-width: 1439px) and (max-width: 1679px) {
-  body {
-    font-size: 17px;
-  }
-
-  .about-text-container {
-    top: 10%;
-  }
-}
 @media only screen and (min-height: 900px) {
   .hand-height {
     top: 90px;
@@ -765,13 +688,17 @@ textarea.form-format {
     top: 200px;
   }
 
+  .project-number {
+    top: 100px;
+  }
+
   .contact-form {
     width: 60%;
   }
 
   .contact-info {
     padding: 30px;
-    width: 40%
+    width: 40%;
   }
 
   .contact-info-container {
@@ -791,7 +718,6 @@ textarea.form-format {
   textarea.form-format {
     height: 100px;
   }
-
 }
 @media only screen and (max-width: 650px) {
   nav {
@@ -805,6 +731,10 @@ textarea.form-format {
 
   .list-toggle {
     display: none;
+  }
+
+  ul {
+    position: relative;
   }
 
   nav ul {
@@ -857,61 +787,36 @@ textarea.form-format {
   }
 
   .about-container h1 {
-    width: 100%;
-    text-align: center;
     margin: 40px 0 0 auto;
-  }
-
-  .about-text-container {
-    width: 100%;
-    overflow-y: hidden;
   }
 
   .about-text {
     width: 100%;
-    top: 120px;
     text-align: center;
     padding: 0 35px;
     box-sizing: border-box;
-    margin-left: auto;
   }
 
   .about-visuals {
     display: none;
   }
 
-  .download-position {
-    width: 100%;
-    height: 100%;
-  }
-
   .download-container {
     text-align: center;
-    height: 50px;
-    margin-top: auto;
-  }
-
-  .download {
-    top: 16px;
-    margin-left: auto;
-    position: relative;
+    padding: 20px;
   }
 
   h2 {
-    margin-left: auto;
     text-align: center;
     padding: 0 8px 0 8px;
-    box-sizing: border-box;
   }
 
   h3 {
-    margin-left: auto;
     text-align: center;
     padding: 0 8px 0 8px;
   }
 
   h4 {
-    margin-left: auto;
     text-align: center;
     width: 100%;
   }
@@ -942,7 +847,7 @@ textarea.form-format {
     width: 100%;
   }
 
-  .explore {
+  .button-main {
     margin: auto;
     position: relative;
     border: 3.5px solid white;
@@ -951,7 +856,13 @@ textarea.form-format {
   }
 
   .image-overlay {
-    background:  linear-gradient(0deg, rgba(10,10,10,0.9) 0%, rgba(30,30,30,0.7) 18%, rgba(70,70,70,0.4) 33%, rgba(32,47,62,0) 64%);
+    background: linear-gradient(
+      0deg,
+      rgba(10, 10, 10, 0.9) 0%,
+      rgba(30, 30, 30, 0.7) 18%,
+      rgba(70, 70, 70, 0.4) 33%,
+      rgba(32, 47, 62, 0) 64%
+    );
   }
 
   h1 {
@@ -1001,7 +912,6 @@ textarea.form-format {
   .contact-form h1 {
     margin: 5% 0 0 auto;
   }
-
 }
 @media only screen and (min-width: 651px) {
   ul {
@@ -1015,11 +925,5 @@ textarea.form-format {
 
   .bottomgroup {
     width: 80%;
-  }
-
-  .about-shape {
-    right: auto;
-    top: 380px;
-    height: 50%;
   }
 }

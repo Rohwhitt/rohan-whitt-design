@@ -14,7 +14,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 
 .project-title {
@@ -33,15 +33,11 @@ h3 {
   padding-top: 20px;
 }
 
-.explore {
+.button-main {
   margin-top: auto;
   margin-left: auto;
   position: relative;
   text-decoration: none;
-}
-
-.explore:hover {
-  padding: 10px 30px 10px 30px;
 }
 
 .project-bg {
@@ -54,11 +50,11 @@ h3 {
   width: 100%;
   height: 85vh;
   position: absolute;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .work-text-container {
-  height: 100vh;
+  height: auto;
   padding: 0 25px;
   box-sizing: border-box;
   overflow-y: hidden;
@@ -70,7 +66,7 @@ h3 {
 
 .heading-container {
   margin: 120px 5% 0 0;
-  flex: .6;
+  flex: 0.6;
 }
 
 .body-text-container {
@@ -88,9 +84,9 @@ h3 {
 }
 
 .line {
-  height: 10%;
+  margin-top: 5%;
   border-bottom: 2px solid;
-  border-color: rgb( 23, 203, 200);
+  border-color: rgb(23, 203, 200);
 }
 
 .list-section {
@@ -111,16 +107,17 @@ h3 {
 
 .info-item {
   display: flex;
-  line-height: 60px;
+  line-height: 2.5em;
   padding: 0 0 0 0;
-  font-family: 'catamaran';
-  font-size: 1.4rem;
+  font-family: "catamaran";
+  font-size: 1em;
   color: rgb(210, 210, 210);
 }
 
 .info-heading {
-  font-size: 2.3em;
+  font-size: 1.5em;
   margin-top: 70px;
+  padding-bottom: 15px;
 }
 
 .screen-container {
@@ -143,13 +140,13 @@ h3 {
   flex: 1;
   z-index: 2;
   padding: 20px 30px 0;
+  overflow-y: hidden;
 }
 
 .screen-info {
   flex: 1;
   z-index: 2;
 }
-
 
 .screen-info h2 {
   margin: 35px 0;
@@ -172,11 +169,15 @@ h3 {
   right: 10%;
   margin-top: 100px;
   border-radius: 100%;
-  background: rgb(34,34,34);
-  /*background: linear-gradient(55deg, rgba(34,34,34,0) 0%, rgba(34,34,34,.3) 100%);*/
-  /*background: linear-gradient(55deg, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0.04) 0%, rgba(31, 31, 31, 0.13) 51.68%, rgba(31, 31, 35, 0.21) 85.29%, rgba(34, 34, 34, 0.24));
-  */
-  background: linear-gradient(55deg, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0.04), rgba(31, 31, 31, 0.13) 51.68%, rgba(31, 31, 35, 0.54) 91.6%, rgba(34, 34, 34, 0.91));
+  background: rgb(34, 34, 34);
+  background: linear-gradient(
+    55deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
   position: absolute;
 }
 
@@ -190,17 +191,30 @@ h3 {
 
 #circle3 {
   left: 5%;
-  background: linear-gradient(319deg, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0.04), rgba(31, 31, 31, 0.13) 51.68%, rgba(31, 31, 35, 0.54) 91.6%, rgba(34, 34, 34, 0.91));
+  background: linear-gradient(
+    319deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
 }
 
 #circle4 {
   left: auto;
   right: 30%;
-  background: linear-gradient(319deg, rgba(34, 34, 34, 0), rgba(34, 34, 34, 0.04), rgba(31, 31, 31, 0.13) 51.68%, rgba(31, 31, 35, 0.54) 91.6%, rgba(34, 34, 34, 0.91));
+  background: linear-gradient(
+    319deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
 }
 
 @media only screen and (max-width: 731px) {
-
   .work-text-container {
     margin-top: 10%;
   }
@@ -219,6 +233,10 @@ h3 {
     padding: 0 8%;
   }
 
+  .info-heading {
+    padding: 0;
+  }
+
   .screen-container {
     flex-direction: column;
     height: auto;
@@ -232,7 +250,6 @@ h3 {
   .bg-circle {
     display: none;
   }
-
 }
 
 @media only screen and (max-height: 800px) {
@@ -242,13 +259,12 @@ h3 {
 }
 
 @media only screen and (orientation: portrait) {
-
   .screen-container {
     height: auto;
   }
 
   .screen-info h2 {
-    font-size: 2.2em
+    font-size: 2.2em;
   }
 
   .final-img-container {
