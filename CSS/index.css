@@ -449,6 +449,11 @@ a {
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0;
 }
 
 .work-text-container {
@@ -464,6 +469,7 @@ a {
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
+  opacity: 0;
 }
 
 .image-overlay {
@@ -633,6 +639,10 @@ textarea.form-format {
 @media only screen and (min-width: 1680px) {
   body {
     font-size: 23px;
+  }
+
+  h1 {
+    font-size: 5rem;
   }
 
   .button-main {
