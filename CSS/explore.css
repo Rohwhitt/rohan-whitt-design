@@ -1,0 +1,280 @@
+.explore-container {
+  text-align: center;
+  height: 85vh;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.project-title {
+  position: relative;
+  margin: 100px 0 0 auto;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-position {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+}
+
+.button-main {
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+  text-decoration: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  opacity: 1;
+}
+
+.project-bg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.dark-overlay {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.work-text-container {
+  height: auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.project-info-container {
+  display: flex;
+}
+
+.heading-container {
+  margin: 120px 5% 0 0;
+  flex: 0.6;
+}
+
+.body-text-container {
+  margin-top: 130px;
+  flex: 1;
+}
+
+.info-container {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+}
+
+.info-align {
+  margin: 0 80px;
+}
+
+.line {
+  margin-top: 5%;
+  border-bottom: 2px solid;
+  border-color: rgb(23, 203, 200);
+}
+
+.list-section {
+  min-height: 50%;
+}
+
+.list-container {
+  padding-right: 80px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info-list {
+  position: relative;
+  right: auto;
+  width: auto;
+}
+
+.info-item {
+  display: flex;
+  line-height: 2.5em;
+  padding: 0 0 0 0;
+  font-family: "catamaran";
+  font-size: 1em;
+  color: rgb(210, 210, 210);
+}
+
+.info-heading {
+  font-size: 1.5em;
+  margin-top: 70px;
+  padding-bottom: 15px;
+}
+
+.screen-container {
+  margin-top: 200px;
+  height: 80vh;
+  display: flex;
+}
+
+.screen-container img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+.second-info {
+  flex-direction: row-reverse;
+}
+
+.screen-img-container {
+  flex: 1;
+  z-index: 2;
+  padding: 20px 30px 0;
+  overflow-y: hidden;
+}
+
+.screen-info {
+  flex: 1;
+  z-index: 2;
+}
+
+.screen-info h2 {
+  margin: 35px 0;
+  font-size: 2.5em;
+}
+
+.final-img-container {
+  height: 60%;
+  margin-top: 12%;
+  overflow-y: hidden;
+}
+
+.final-img-container img {
+  width: 100%;
+}
+
+.bg-circle {
+  width: 50%;
+  padding-bottom: 50%;
+  right: 10%;
+  margin-top: 100px;
+  border-radius: 100%;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(
+    55deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
+  position: absolute;
+}
+
+.small-circle {
+  width: 20%;
+  padding-bottom: 20%;
+  right: auto;
+  left: 25%;
+  margin-top: 220px;
+}
+
+#circle3 {
+  left: 5%;
+  background: linear-gradient(
+    319deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
+}
+
+#circle4 {
+  left: auto;
+  right: 30%;
+  background: linear-gradient(
+    319deg,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0.04),
+    rgba(31, 31, 31, 0.13) 51.68%,
+    rgba(31, 31, 35, 0.54) 91.6%,
+    rgba(34, 34, 34, 0.91)
+  );
+}
+
+@media only screen and (max-width: 731px) {
+  .work-text-container {
+    margin-top: 10%;
+  }
+
+  .project-info-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .body-text-container {
+    margin-top: 80px;
+  }
+
+  .info-align {
+    margin: auto;
+    padding: 0 8%;
+  }
+
+  .info-heading {
+    padding: 0;
+  }
+
+  .screen-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .screen-info {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .bg-circle {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .screen-container {
+    height: auto;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .screen-container {
+    height: auto;
+  }
+
+  .screen-info h2 {
+    font-size: 2.2em;
+  }
+
+  .final-img-container {
+    height: auto;
+  }
+}
