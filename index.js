@@ -1,4 +1,24 @@
 $(document).ready(function () {
+  const landingImg = document.querySelectorAll(".landingHover");
+  const landingh1 = document.querySelector(".landing-h1");
+  const landingA = document.querySelector(".secondary-text");
+
+  //mouse enter and leave function for landing img projects
+  landingImg.forEach((item) => {
+    let projectImgg;
+    item.addEventListener("mouseenter", function (e) {
+      projectImgg = document.querySelector(`.landingP${e.target.id}`);
+      projectImgg.style.opacity = ".3";
+      landingh1.innerHTML = `VISIT <br><a>PROJECT ${e.target.id}.</a>`;
+      landingA.style.opacity = "0";
+    });
+    item.addEventListener("mouseleave", function () {
+      projectImgg.style.opacity = "0";
+      landingh1.innerHTML = "DIGITAL <br /><a>DESIGNER.</a>";
+      landingA.style.opacity = "1";
+    });
+  });
+
   //Responsive navigation bar
   $("#mobile-nav-bar").click(function () {
     $(".nav-background, .list-toggle").slideToggle(500);
