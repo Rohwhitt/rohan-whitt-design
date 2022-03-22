@@ -212,6 +212,13 @@ h1 {
   transition: all 0.5s ease-out;
 }
 
+.project-text {
+  position: absolute;
+  filter: blur(8px);
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+
 h1 a {
   color: rgb(92, 224, 244);
   font-size: 1em;
@@ -251,10 +258,6 @@ h5 {
 }
 
 /*--ABOUT SECTION--*/
-
-#about {
-  margin-top: 250px;
-}
 
 .content-align {
   margin-left: 6%;
@@ -343,6 +346,7 @@ a {
   flex: 60%;
   padding: 15% 0 0 6%;
   z-index: 2;
+  transition: all 0.8s ease-out;
 }
 /* change font size in h1 property later. cbf rn */
 .landing-text-container h1 {
@@ -384,26 +388,35 @@ a {
 
 .img1 {
   top: 10%;
+  transition: all 0.5s ease-in;
 }
 
 .img2 {
   max-height: 45%;
   top: 30%;
   right: 10%;
+  transition: all 0.5s ease-in;
 }
 
 .img3 {
   bottom: 10%;
   width: 60%;
+  transition: all 0.5s ease-in;
 }
 
 .landing-box {
   width: 70%;
   height: 100%;
-  background-color: black;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.83) 28%,
+    rgba(0, 0, 0, 0.63) 82%,
+    rgba(0, 0, 0, 0) 100%
+  );
   opacity: 0.4;
   margin: 0 auto;
   align-content: center;
+  transition: all 0.5s ease-in;
 }
 
 .topgroup {
