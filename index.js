@@ -47,6 +47,7 @@ $(document).ready(function () {
   var mouseAnimation = new TimelineMax(); // Variable for mouse animation on scroll
   var logoAnimation = new TimelineMax(); // Variable for logo text on scroll
   var aboutAnimation = new TimelineMax(); //Variable for about section animation
+  var aboutBody = new TimelineMax();
   var visualAnimation = new TimelineMax(); //Variable for about visuals animation
   var workAnimation = new TimelineMax();
   var landingImgAn = new TimelineMax();
@@ -67,10 +68,11 @@ $(document).ready(function () {
   logoAnimation.to(".nav-logo", 0.4, { opacity: 0 });
   landingImgAn.to(".landing-img", 0.2, { y: `-100%`, opacity: "0" });
   //About animations
-  aboutAnimation.to("#about h1, .about-text", 0.2, { y: -30, opacity: 1 });
+  aboutAnimation.to("#about h1", 0.2, { y: -30, opacity: 1 });
+  aboutBody.to(".about-text", 1, { y: -10, opacity: 1 }, "=0.5");
   visualAnimation.to(".about-visuals", 1, { opacity: 1 }, "=0.5");
   //Work Animations
-  workAnimation.to("#work h1", 1.2, { opacity: 1 });
+  workAnimation.to("#work h1", 0.5, { opacity: 1 });
   projectBgAnimation.to(".image-container", 1, { opacity: 1 }, "=0.5");
   projectNumber.to(".content-align h4", 1, { opacity: 0.2 }, "=0.7");
   projectAnimation.to(
@@ -84,15 +86,10 @@ $(document).ready(function () {
   parallaxScrollTwo.to("#projectbg2", 1, { y: "-20%", ease: Power0.easeNone });
 
   // scrollMagic scene function
-  const newScene = function (
-    scrollPoint,
-    triggerNumber,
-    runContinue,
-    animation
-  ) {
+  const newScene = function (scrollPoint, scrollDelay, runContinue, animation) {
     const scene10 = new ScrollMagic.Scene({
       triggerElement: scrollPoint,
-      triggerHook: triggerNumber,
+      triggerHook: scrollDelay,
       reverse: runContinue,
     })
       .setTween(animation)
@@ -104,12 +101,13 @@ $(document).ready(function () {
   newScene(".scrollpoint2", "1", true, logoAnimation);
   newScene("#about", 0.7, false, aboutAnimation);
   newScene("#about", 0.6, false, visualAnimation);
-  newScene(".project1", 0.6, false, workAnimation);
-  newScene(".project1", 0.5, false, projectBgAnimation);
+  newScene(".project1", 0.9, false, workAnimation);
+  newScene(".project1", 0.9, false, projectBgAnimation);
   newScene(".project1", 0.5, false, projectNumber);
   newScene(".project1", 0.5, false, projectAnimation);
   newScene(".scrollpoint1", 0.7, true, landingImgAn);
   newScene(".scrollpoint1", 0.9, true, titleAn);
+  newScene("#about", 0.5, false, aboutBody);
   /*
   const scene3 = new ScrollMagic.Scene({
     triggerElement: "#about",
